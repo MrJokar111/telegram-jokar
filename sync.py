@@ -3,7 +3,7 @@ from telethon import TelegramClient, events
 
 # اخد البيانات من Environment Variables
 api_id = int(os.environ.get("API_ID"))
-api_hash = os.environ.get("API_HASH"))
+api_hash = os.environ.get("API_HASH")
 
 source_chat = int(os.environ.get("SOURCE_CHAT"))
 target_channel = int(os.environ.get("TARGET_CHANNEL"))
@@ -24,3 +24,4 @@ async def handler(event):
 
 print("Bot is running...")
 client.run_until_disconnected()
+
